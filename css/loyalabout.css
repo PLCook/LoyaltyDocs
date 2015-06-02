@@ -1,0 +1,57 @@
+
+
+H2 { 
+	text-align: center;
+	margin: 1em;
+	padding: 1em;
+	padding-bottom: 1.5em;
+
+	font-size: 2.75em;
+	text-shadow: .075em .03em white;
+
+
+	 }
+H1 {
+	 	text-align: center;
+	 	margin: 2em;
+	 	margin-top: 1.3em;
+	 	margin-bottom: 1em;
+ 		opacity: 0.65;
+	 	font-size: 5em;
+	 	color: blue;
+	 	text-shadow: .1em .065em black;
+	 	
+	 }
+
+h3 {
+	padding-left: .64em;
+	text-align: center;
+}
+
+h4 {
+	padding-left: .64em;
+}
+
+section {
+	max-width: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 1em;
+	margin: 3em;
+	}
+	
+section:hover{
+	background-color: rgba(255, 255, 255, 1.0);
+	}
+	
+p {
+	padding: .313em;
+	margin: .188em;
+	
+    font-size: 1.2em;
+    max-width: 100%;
+    width: 60em;
+    text-align; center;
+    }
+
+
+

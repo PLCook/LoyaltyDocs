@@ -1,0 +1,180 @@
+html {
+    background: url(../img/Flag_Background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+	width: 100%;
+	max-width: 1600px;
+}
+
+ul{
+
+    list-style:none;
+ 	top: 0;
+    padding:0;
+    text-align:center;
+}
+li{
+    display:inline-block;
+    margin: .32em;
+    background-color: rgba(255,255,255,0.8);
+    padding: .32em;
+    color: black;
+    text-transform: uppercase;
+
+    border-radius: .64em;
+    font-family: orbitron;
+
+}
+
+H2 { 
+	text-align: center;
+	margin: 1em;
+	padding: 1em;
+	padding-bottom: 1.5em;
+
+	font-size: 2.75em;
+	text-shadow: .075em .03em white;
+
+
+	 }
+H1 {
+	 	text-align: center;
+	 	margin: 2em;
+	 	margin-top: 1.3em;
+	 	margin-bottom: 1em;
+ 		opacity: 0.65;
+	 	font-size: 5em;
+	 	color: blue;
+	 	text-shadow: .1em .065em black;
+	 	
+	 }
+
+h3 {
+	padding-left: .64em;
+	text-align: center;
+}
+
+h4 {
+	padding-left: .64em;
+}
+
+figure {
+		float: right;
+		width: 34.38em;
+		margin: .64em;
+
+
+}
+
+figcaption {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+p {
+	padding: .313em;
+	margin: .188em;
+	margin-top: 4em;
+	background-color: rgba(255,255,255,0.4);
+	width: 35em;
+    /*-webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
+    /*transition: background-color 2s;*/
+
+    font-size: 1.2em;
+    max-width: 100%;
+    border-radius: 1em;
+
+}
+
+p:hover{
+	background-color: rgba(255,255,255,1.0);
+
+}
+
+img {
+	border: .125em solid black;
+	width: 100%;
+	opacity: 1.0;
+	max-width: 100%;
+	border-radius: .4em;
+}
+
+
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+color: #ffffff;
+height: 4.063em;
+text-align: center;
+/* Adds shadow to the bottom of the bar */
+-webkit-box-shadow: 0em 0em 8em 0em #000000;
+-moz-box-shadow: 0em 0em 8em 0em #000000;
+box-shadow: 0em 0em 8em 0em #000000;
+/* Adds the transparent background */
+background-image: url(../img/americanflag.jpg);
+color: rgba(1, 1, 1, 0.8);
+}
+
+nav a:hover {
+color: gray;
+} 
+
+a:link {
+	color: black;
+}
+
+fieldset {
+	font-size: 1.2;
+	width: 40em;
+	max-width: 100%;
+	margin-top: 3em;
+}
+
+.form-group {
+	margin-top: .6em;
+}
+
+p.name, p.second {
+	margin: .25em;
+}
+
+input.form-control {
+	height: 3em;
+	width: 40em;
+}
+
+button.submit {
+	height: 3em;
+	width: 10em;
+	color: gray;
+	opacity: 0.8;
+}
+
+button.submit:hover {
+	opacity: 1.0;
+}
+
+p.email {
+	text-align: center;
+	width 10em;
+	height: 3em;
+	font-size: 2em;
+	margin: .05em;
+	padding: .05em;
+}
+
+
+
+/*#primary {
+	margin-top: 5em;
+}
+
+#secondary {
+	margin-top: 3em;
+}*/
+
+
+

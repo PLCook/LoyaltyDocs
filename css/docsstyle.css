@@ -1,0 +1,58 @@
+<head>
+<style>
+
+
+
+
+.align-right { float:right; margin: 0 0 15px 15px; }
+.align-left { float:left; margin: 0 15px 15px 0; }
+
+.frame { padding: 5px; border: 1px solid #aaa; }
+
+img {
+    float: right;
+}
+.nav-pills {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+h2 {
+	font-size: 22px;
+	}
+	
+h3 {
+	font-size: 60px;
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: inline block;
+    width: 120px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #E6E6E6;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: lightblue;
+}
+
+</style>
