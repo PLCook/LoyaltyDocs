@@ -69,11 +69,24 @@ h4 {
 
 }*/
 
+.printedblog {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
 p.centertext {
 	width: 100%;
 	height: auto;
 	text-align: center;
 	}
+
+.services {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
 
 
 p {
@@ -100,6 +113,32 @@ p.press_release02 {
 	margin: 0em;
 	padding: .313em;
 }
+
+p.bloghead {
+	padding: 0em;
+	margin: 0em;
+	text-align: center;
+	width: 100%;
+	max-width: 15em;
+	
+	}
+	
+p.blogbody {
+	padding: 0em;
+	margin-bottom: 2em;
+	text-align: center;
+	width: 100%;
+	max-width: 35em;
+	}
+	
+p.blogdate {
+	font-size: 1em;
+	text-align: center;
+	padding: 0em;
+	margin: 0em;
+	width: 100%;
+	max-width: 15em;
+	}
 
 img {
 	border: .125em solid black;
@@ -205,6 +244,14 @@ p.email {
 	padding: .05em;
 }
 
+
+
+.emaildocs {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+}
 
 
 /*#primary {

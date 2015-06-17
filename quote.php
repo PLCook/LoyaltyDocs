@@ -10,7 +10,7 @@
 	    <link rel="stylesheet" type="text/css" href="css/loyalstyles.css">
 
 
-
+	    <meta charset="UTF-8"> 
         <meta name="description" content="Loyalty Docs Quote Page">
         <meta name="keywords" content="Frager, Dr. Alfred, Dr. Stan, Loyalty, Book, Docs">
         <meta name="author" content="Paul Cook">

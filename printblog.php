@@ -2,40 +2,32 @@
 	
 	 
 	
-$connection = mysql_connect("localhost","theloyal_admin","blues1611");
+$conn = mysql_connect("localhost","theloyal_admin","blues1611");
 
-	if (!$connection) 
+	if (!$conn) 
 	{ 
 		die('Could not connect: ' . mysql_error()); 
 	}
 
+
 	
-$stmt = $mysqli->prepare("SELECT author, title, pubdate, blog FROM blogs");
-if(!$stmt){
-	printf("Query Prep Failed: %s\n", $mysqli->error);
-	exit;
+$sql = 'SELECT author, title, pubdate, blog FROM blogs';
+
+mysql_select_db('theloyal_StoredData');
+
+$retval = mysql_query( $sql, $conn );
+if(! $retval )
+{
+  die('Could not get data: ' . mysql_error());
 }
- 
-$stmt->execute();
- 
-$stmt->bind_result($author, $title, $pubdate, $$blog);
- 
-echo "<ul>\n";
-while($stmt->fetch()){
-	printf("\t<li>%s %s</li>\n",
-		htmlspecialchars($theblog),
-		htmlspecialchars($title),
-		htmlspecialchars($pubdate),
-		htmlspecialchars($blog)
-	);
-}
-echo "</ul>\n";
- 
-$stmt->close();
-
-
-
-
+while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+{
+    	echo("<p class=\"bloghead\">" . $row["author"] . "</p>");
+	echo("<p class=\"bloghead\">" . $row["title"] . "</p>");
+	echo("<p class=\"blogdate\">" . $row["pubdate"] . "</p>");
+	echo("<p class=\"blogbody\">" . $row["blog"] . "</p>");
+} 
 
 
 ?>
+

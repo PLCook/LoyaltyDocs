@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/loyalstyles.css">
 
 
-
+        <meta charset="UTF-8"> 
         <meta name="description" content="Loyalty Docs Blog Page">
         <meta name="keywords" content="Frager, Dr. Alfred, Dr. Stan, Loyalty, Book, Docs">
         <meta name="author" content="Paul Cook">
@@ -50,23 +50,16 @@
             </div>
         </header>
 
-    <h2>Doctors Blog Coming Soon</h2>
+    <h2>Doctors Blog</h2>
     
-        <article>
-            <section>
-                <fieldset>
-                    <form action="printblog.php" method="get">
-                        <textarea cols="100" rows="30" name="theblog" id="theblog" placeholder="Enter blog text here.">
-                        </textarea>
-                    </form>
-                </fieldset>
-                    
-            </section>
-        </article>
+        <div class="container printedblog">
+            <?php
+                include("printblog.php");
+            ?>
+        </div>
     </body>
             <script src="http://code.jquery.com/jquery.js"></script>
             <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
             <script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
 </html>
-    
     

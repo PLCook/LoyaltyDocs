@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/loyalstyles.css">
 
 
-
+        <meta charset="UTF-8"> 
         <meta name="description" content="Loyalty Docs Contact Page">
         <meta name="keywords" content="Frager, Dr. Alfred, Dr. Stan, Loyalty, Book, Docs">
         <meta name="author" content="Paul Cook">
@@ -56,10 +56,10 @@
     
         <article>
             <section>
-            <div class="container">
-                <p class="email"><a href="mailto:DoctorAlfred@theLoyaltyDocs.com">Alfred Frager (email)</a></p>
-                <p class="email"><a href="mailto:DoctorStan@theLoyaltyDocs.com">Stan Frager (email)</a></p>
-                <p class="email">Please contact us with any questions, comments, or concerns. We are happy to help.</p>
+            <div class="container emaildocs">
+                <p>Please contact us with any questions, comments, or concerns. We are happy to help.</p><br><br>
+                <button class="submit" type="submit"><a href="mailto:DoctorAlfred@theLoyaltyDocs.com">Email Alfred Frager</a></button>
+                <button class="submit" type="submit"><a href="mailto:DoctorStan@theLoyaltyDocs.com">Email Stan Frager</a></button>
                 </div>
             </section>
         </article>
