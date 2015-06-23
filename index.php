@@ -19,6 +19,7 @@
     	<title>The Loyalty Docs Home Page</title>
 	</head>
 	<body>
+		<div align="center">
 		<header>
 			<div class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation"> 
 				<div class="container"> 
@@ -45,18 +46,18 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container-fluid">
         	<h1>The Loyalty Docs</h1>
         	</div>
 		</header>
 		<main>
 			<article>
-				<div class="container-fluid">
+				<div class="container-fluid row">
 				<section>
 					<figure>
-                    <img class="img-responsive center-block"  src="img/bookcover.jpg" alt="The Cover of the Upcoming Book"/>
-                    
+                    	<img class="img-responsive col-xs-12 col-sm-6"  src="img/bookcover.jpg" alt="The Cover of the Upcoming Book"/>
                 	</figure>
+                	<div class ="col-xs-12 col-sm-6 ">
                 	<p class="press_release01">FOR IMMEDIATE RELEASE:</p>
         
 					<p class="press_release02">Contact:<br>
@@ -75,11 +76,32 @@
 					The Loyalty Docs have created a book that will change the way employees, managers and executives view loyalty today. Loyalty: From the Battlefield to the Boardroom will give you what you need to create and develop a loyal workforce.<br><br>
 
 					For more information, contact DoctorAlfred@theloyaltydocs.com, or DoctorStan@theloyaltydocs.com. To get more information about the book and to sign up for updates about the book, such as when it is being published and where, please fill out the form below.</p>
+					</div>
+
+					
 				</section>
+			
 				</div>
+
+<script>
+function validateForm() {
+    var x = document.forms["emailform"]["name"].value;
+    var n = document.forms["emailform"]["email"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    if (n == null || n == "") {
+    	alert("Email address must be filled out");
+    	return false;
+    }
+}
+
+</script>
+
 				<div class="container-fluid">
 				<section>
-	                <form action="guestData.php" method="POST">
+	                <form name="emailform" onsubmit="return validateForm()" action="guestData.php" method="POST">
 	                    <fieldset>
 	                        <div class="form-group">
 	                            <input class="form-control" name="name" id="name" placeholder="Name (Required)" type="text"/>
@@ -102,6 +124,7 @@
         		</div>
 			</article>
 		</main>
+	</div>
 	</body>
 			<script src="http://code.jquery.com/jquery.js"></script>
 		    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>

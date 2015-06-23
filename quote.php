@@ -19,6 +19,7 @@
     	<title>The Loyalty Docs Quote Page</title>
 	</head>
 	<body>
+		<div align="center">
 		<header>
 			<div class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation"> 
 				<div class="container"> 
@@ -55,17 +56,17 @@
 						<h2>What people are saying about the new book</h2>
 					</section>
 					</div>
-					<div class="container-fluid">
+					<div class="container-fluid row">
 				<article>
 					
 					<section>
 						<figure>
-							<img class="img-responsive center-block" src="/img/bookcover.jpg" alt="The Cover of the Upcoming Book"/>
+							<img class="img-responsive col-xs-12 col-sm-6" src="img/bookcover.jpg" alt="The Cover of the Upcoming Book"/>
 							
                 				</figure>
                 			</section>
                 			
-                			
+                		<div class ="col-xs-12 col-sm-6 ">	
                 			<section> 
         					<p class="quote"><i>"Dr. Stan's new book "Loyalty: Give it Or Get Out!" is sure to be a hit and I can't wait to read it and share it with my teams. Loyalty is a leadership quality that is often overlooked as an important factor to true leadership for a successful organization or team. We need more of it, this book will help understand it and foster it for organizations of the future."</i></p>
 
@@ -140,10 +141,12 @@
 						<p class="name">Director of Marketing</p>
 						<p class="name3">St. Elizabeth's Hospital</p>
 					</section>
+				</div>
 					
 				</article>
 				</div>
 			</main>
+		</div>
 		</body>
 			<script src="http://code.jquery.com/jquery.js"></script>
 		    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>

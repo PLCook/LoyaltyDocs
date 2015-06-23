@@ -1,26 +1,18 @@
 <?php
 	
-	 
-	
-$conn = mysql_connect("localhost","theloyal_admin","blues1611");
-
-	if (!$conn) 
-	{ 
-		die('Could not connect: ' . mysql_error()); 
-	}
-
+include("db.php");
 
 	
-$sql = 'SELECT author, title, pubdate, blog FROM blogs';
+$sql = 'SELECT `author`, `title`, `pubdate`, `blog` FROM blogs ORDER BY blog_id DESC';
 
-mysql_select_db('theloyal_StoredData');
 
-$retval = mysql_query( $sql, $conn );
+
+$retval = mysqli_query( $connection, $sql );
 if(! $retval )
 {
-  die('Could not get data: ' . mysql_error());
+  die('Could not get data:');
 }
-while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC))
 {
     	echo("<p class=\"bloghead\">" . $row["author"] . "</p>");
 	echo("<p class=\"bloghead\">" . $row["title"] . "</p>");

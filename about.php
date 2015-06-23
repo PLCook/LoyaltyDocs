@@ -21,6 +21,7 @@
         <title>The Loyalty Docs About</title>
     </head>
     <body>
+        <div align="center">
         <header>
             <div class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation"> 
                 <div class="container"> 
@@ -74,6 +75,7 @@
                 </section>
             </article>
         </main>
+    </div>
     </body>
             <script src="http://code.jquery.com/jquery.js"></script>
             <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>

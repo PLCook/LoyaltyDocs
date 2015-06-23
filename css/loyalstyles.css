@@ -1,29 +1,14 @@
+
+
 body {
 	width: 100%;
-	max-width: 1600px;
+	max-width: 2000px;
 	background: url(../img/Flag_Background.jpg) no-repeat center center fixed;
     background-size: cover;
+
 }
 
-/*ul {
-	width: 100%;
-	max-width: 1500em;
-    list-style:none;
- 	top: 0;
-    padding:0;
-    text-align:center;
-}
-li{
-    display:inline-block;
-    margin: .32em;
-    background-color: rgba(255,255,255,0.8);
-    padding: .32em;
-    color: black;
-    text-transform: uppercase;
-    border-radius: .64em;
-    font-family: orbitron;
 
-}*/
 
 h2 { 
 	text-align: center;
@@ -40,15 +25,12 @@ h2 {
 
 h1 {
 	 	text-align: center;
-	 	/*margin: 2em;
-	 	margin-top: 1.3em;
-	 	margin-bottom: 1em;*/
+
  		opacity: 0.65;
 	 	font-size: 5em;
 	 	color: blue;
 	 	text-shadow: .1em .065em black;
-	 	/*max-width: 100%;
-	 	height: auto;*/
+
 	 	
 	 }
 
@@ -61,13 +43,7 @@ h4 {
 	padding-left: .64em;
 }
 
-/*figure {
-		float: right;
-		width: 34.38em;
-		margin: .64em;
 
-
-}*/
 
 .printedblog {
 	margin-left: auto;
@@ -76,6 +52,7 @@ h4 {
 }
 
 p.centertext {
+	max-width: 1400px;
 	width: 100%;
 	height: auto;
 	text-align: center;
@@ -95,12 +72,13 @@ p {
 	margin-top: 1em;
 	background-color: rgba(255,255,255,1.0);
 	width: 35em;
-    /*-webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
-    /*transition: background-color 2s;*/
+ 
 
     font-size: 1.2em;
     max-width: 100%;
     border-radius: .25em;
+    margin-right: 5em;
+    text-align: center;
 
 }
 
@@ -112,6 +90,7 @@ p.press_release01 {
 p.press_release02 {
 	margin: 0em;
 	padding: .313em;
+	margin-right: 5em;
 }
 
 p.bloghead {
@@ -129,6 +108,7 @@ p.blogbody {
 	text-align: center;
 	width: 100%;
 	max-width: 35em;
+
 	}
 	
 p.blogdate {
@@ -141,37 +121,15 @@ p.blogdate {
 	}
 
 img {
-	border: .125em solid black;
+	/*border: .125em solid black;*/
+	/*outline: 1px solid black;*/
 	opacity: 1.0;
 	max-width: 100%;
 	height: auto;
 	border-radius: .4em;
-	float: right;
-		width: 34.38em;
-		margin: .64em;
+
 }
 
-
-/*nav {
-top: 0;
-width: 100%;
-max-width: 100em;
-color: #ffffff;
-height: 4.063em;
-text-align: center;*/
-
-/* Adds shadow to the bottom of the bar */
-/*-webkit-box-shadow: 0em 0em 8em 0em #000000;
--moz-box-shadow: 0em 0em 8em 0em #000000;
-box-shadow: 0em 0em 8em 0em #000000;
-/* Adds the transparent background */
-/*background-image: url(../img/americanflag.jpg);
-color: rgba(1, 1, 1, 0.8);
-}*/
-
-/*nav a:hover {
-color: gray;
-} */
 
 a:link {
 	color: black;
@@ -189,36 +147,7 @@ fieldset {
 	margin-top: .6em;
 }
 
-/*p.name, p.second, p.quote {
-	margin: .25em;
-	margin-left: 3em;
-	text-align: center;
-	height: auto;
 
-}
-
-p.quote {
-	margin-bottom: .75em;
-	height: auto;
-
-}
-
-p.quote1 {
-	margin-bottom: .75em;
-	margin: .25em;
-	margin-left: 3em;
-	height: auto;
-	
-}
-
-p.name3 {
-	margin-bottom: 2.25em;
-	margin-left: 3em;
-	margin-top: .25em;
-	text-align: center;
-	height: auto;
-	
-}*/
 
 
 input.form-control {
@@ -246,21 +175,60 @@ p.email {
 
 
 
-.emaildocs {
+p.emaildocs {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
 	text-align: center;
 }
 
+.emailbuttons {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
 
-/*#primary {
-	margin-top: 5em;
-}
+.sendbutton {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 16.5px 33px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 17px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+   }
+.sendbutton:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.sendbutton:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
 
-#secondary {
-	margin-top: 3em;
-}*/
+   p.services {
+   	text-align: center;
+   }
+
+
+
 
 
 

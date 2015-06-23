@@ -1,18 +1,26 @@
 <?php
 
-$connection = mysql_connect("localhost","theloyal_admin","blues1611");
+include("db.php");
 
-	if (!$connection) 
+	$name = mysqli_real_escape_string($connection, $_POST['name']);
+
+	$title = mysqli_real_escape_string($connection, $_POST['title']);
+
+	$blogtext = mysqli_real_escape_string($connection, $_POST['blogtext']);
+
+	$query = "INSERT INTO `blogs`(`author`, `title`, `blog`) values ('$name', '$title', '$blogtext')";
+
+	if (!mysqli_query($connection, $query)) 
 	{ 
-		die('Could not connect: ' . mysql_error()); 
+		die('Error: ' . mysqli_error()); 
 	}
-	mysql_select_db("theloyal_StoredData", $connection);
+	
+	mysqli_close($connection);
 
-if(!empty($_POST['name']) && ($_POST['blogtext']))   
-{
-	$query = mysql_query("INSERT INTO blogs(author, title, blog) values ('$_POST[name]', '$_POST[title]', '$_POST[blogtext]')") or die(mysql_error());
+	if($name !=''&& /*$company !=''&& $title !='' &&*/ $blogtext !='')
+
 
 	header("Location: blog.php");
-}
+
 
 ?>

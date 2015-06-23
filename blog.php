@@ -19,6 +19,7 @@
         <title>The Loyalty Docs Blog Page</title>
     </head>
     <body>
+        <div align="center">
         <header>
             <div class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation"> 
                 <div class="container"> 
@@ -57,6 +58,7 @@
                 include("printblog.php");
             ?>
         </div>
+    </div>
     </body>
             <script src="http://code.jquery.com/jquery.js"></script>
             <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
